@@ -22,5 +22,7 @@ jobs:
         python-version: "3.10"
     - name: install
       run: pip install -r requirements.txt
-    - name: Unit tests
+    - name: Unit tests sensor
       run: python -m unittest tests/test_visit_sensor.py
+    - name: Unit tests store
+      run: python -m unittest tests/test_store_methods.py
